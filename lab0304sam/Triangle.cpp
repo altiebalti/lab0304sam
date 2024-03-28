@@ -28,12 +28,14 @@ double Triangle::area(Point a, Point b, Point c) {
     double a1 = Point::dist(a, b);
     double a2 = Point::dist(a, c);
     double a3 = Point::dist(c, b);
-    double p = (a1 + a2 + a3) / 2;
-    return std::sqrt(p * (p - a1) * (p - a2) * (p - a3));
+   // double p = (a1 + a2 + a3) / 2;
+	return abs((a.x * (b.y - c.y) + b.x * (c.y - a.y) 
+                + c.x * (a.y - b.y)) / 2.0);
+   // return std::sqrt(p * (p - a1) * (p - a2) * (p - a3));
 }
 
 bool Triangle::isPointIn(Triangle T, Point p)
 {
-    return (Triangle::area(T.a, T.b, p) + Triangle::area(T.a, T.c, p) + Triangle::area(T.c,T.b, p)) <= Triangle::area(T.a, T.b, T.c);
+    return ((Triangle::area(T.a, T.b, p) + Triangle::area(T.a, T.c, p) + Triangle::area(T.c,T.b, p)) <= Triangle::area(T.a, T.b, T.c));
 }
 

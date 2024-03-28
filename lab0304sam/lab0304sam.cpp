@@ -17,8 +17,10 @@ int main()
     Triangle T;
     std::cout << "Enter your Quadrangle\n";
     Quadrangle Q;
-       
-    std::cout << (Q.isInTriangle(T) ? "YES" : "NO");
+    //std::cout << Triangle::isPointIn(T, Q.a) << '\t' << Triangle::isPointIn(T, Q.b) << '\n';
+    //std::cout << Triangle::isPointIn(T, Q.c) << '\t' << Triangle::isPointIn(T, Q.d) << '\n';
+
+    std::cout << (Q.isInTriangle(T) ? "Yes, it is inside" : "No, it is outside") << '\n';
 
     intr.sayGoodBye();
     
