@@ -18,7 +18,7 @@
     <ClCompile Include="lab0304sam.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Introduce.cpp">
+    <ClCompile Include="Output.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Point.cpp">
@@ -35,7 +35,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Introduce.hpp">
+    <ClInclude Include="Output.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Point.hpp">

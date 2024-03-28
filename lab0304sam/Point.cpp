@@ -13,7 +13,7 @@ void Point::read_point() {
 		if (std::cin.fail()) {
 			std::cin.clear();
 			std::cin.ignore(80, '\n');
-			std::cout << "Incorrect input try again";
+			std::cout << "Incorrect input try again\n";
 		}
 		else {
 			check = false;

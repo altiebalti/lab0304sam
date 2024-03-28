@@ -1,5 +1,5 @@
 #include "Quadrangle.hpp"
-#include "Triangle.hpp"
+
 
 
 bool Quadrangle::isAnyThreePointsCollinear() {

@@ -128,7 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="lab0304sam.cpp" />
-    <ClCompile Include="Introduce.cpp" />
+    <ClCompile Include="Output.cpp" />
     <ClCompile Include="Point.cpp" />
     <ClCompile Include="Quadrangle.cpp" />
     <ClCompile Include="Quadrangle.hpp" />
@@ -136,7 +136,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BasicGeometry.hpp" />
-    <ClInclude Include="Introduce.hpp" />
+    <ClInclude Include="Output.hpp" />
     <ClInclude Include="Point.hpp" />
     <ClInclude Include="Triangle.hpp" />
   </ItemGroup>

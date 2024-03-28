@@ -2,13 +2,15 @@
 //
 
 #include <iostream>
-#include "Introduce.hpp"
+#include "Output.hpp"
 #include "Point.hpp"
 #include "Triangle.hpp"
 #include "Quadrangle.hpp"
+
+
 int main()
 {   
-    Introduce intr("Tymchenko Oleksandr", "K-13", "18", "Check if quadrangle is in triangle");
+    Output intr("Tymchenko Oleksandr", "K-13", "18", "Check if quadrangle is in triangle");
     intr.introduce_work();
     
     std::cout << "Enter your triangle\n";
@@ -17,6 +19,8 @@ int main()
     Quadrangle Q;
        
     std::cout << (Q.isInTriangle(T) ? "YES" : "NO");
+
+    intr.sayGoodBye();
     
    
 }
